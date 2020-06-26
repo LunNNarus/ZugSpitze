@@ -110,3 +110,28 @@ class main:
     def wynik(self, Ex, Ey, Ez, Ew):
         print('wektor wypadkowy E = ' + str(self.Ew) + '\n wektory składowe:\nEx = '+ str(self.Ex) +'\nEy = ' + str(self.Ey) +'\nEz = '+str(self.Ez))
         return()
+
+
+   #ciąg obliczeniowy
+class last:
+    m2 = True
+    def end(self):
+         d = input('Czy to już wszystko co mogę dla Ciebie zrobić ?[T/N]')
+             
+         if ord(d) == ord('T') or ord(d) == ord('t'):#t
+             last.m2 = False
+             print('dziękuję za współpracę')
+         elif ord(d) == ord('N') or ord(d) == ord('n'):#n
+             pass
+         else:
+             last.end(self) 
+    def gotowiec(self):
+        while self.m2 == True:
+            main.wprowadz_definicje(main,main.m1)
+            main.dystans(main,main.ladunki, main.x, main.y,main.z, main.ll)    
+            main.oblicz_skladowe(main,main.dane, main.ladunki, main.x, main.y,main.z, main.ll, main.k, main.e)
+            main.oblicz_wypadkowe(main,main.Ex, main.Ey, main.Ez) 
+            main.wynik(main,main.Ex, main.Ey, main.Ez, main.Ew)
+            last.end(last)
+           
+last.gotowiec(last)
