@@ -23,7 +23,6 @@ class main:
             return(badana)
         except (ValueError, TypeError):
             return self.czy_calkowita(self, input("Zły argument! Podaj liczbe calkowita\n"))
-            # raise Exception('Podana liczba musi być całkowita\n')
             
     def czy_rzeczywista(self,badana): #sprawdza, czy wpisano liczbę rzeczywistą
         try:
@@ -31,7 +30,6 @@ class main:
             return(badana)
         except (ValueError, TypeError):
             return self.czy_rzeczywista(self, input("Zły argument! Podaj liczbe rzeczywista\n"))
-            # raise Exception('Podana liczba musi być rzeczywista\n')
         
     def wprowadz_definicje(self,m1):  # wprowadza definicje ładunków do słownika  
         
