@@ -63,7 +63,7 @@ class main:
                 self.ladunki[self.ladunki['etykieta'+i]+'y'] = main.czy_rzeczywista(self,input('podaj wartosc y\n'))
                 self.ladunki[self.ladunki['etykieta'+i]+'z'] = main.czy_rzeczywista(self,input('podaj wartosc z\n'))
                 i = int(i)
-            print('\npodaj wspolzedne badanego punktu')
+            print('\npodaj wspolrzedne badanego punktu')
             self.x=(main.czy_rzeczywista(self,input('x\n')))
             self.y=(main.czy_rzeczywista(self,input('y\n')))
             self.z=(main.czy_rzeczywista(self,input('z\n')))
@@ -134,4 +134,4 @@ class last:
             main.wynik(main,main.Ex, main.Ey, main.Ez, main.Ew)
             last.end(last)
            
-last.gotowiec(last)
+# last.gotowiec(last)
